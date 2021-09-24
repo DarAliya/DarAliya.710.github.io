@@ -1,0 +1,42 @@
+header{
+    background-color: rgb(247, 205, 186);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+main{
+    background-color: bisque;
+    color: rgb(133, 84, 24);
+}
+footer{
+    background-color: cornsilk;
+}
+.blackground-color-dark{
+    background-color: bisque;
+    color: rgb(255, 216, 169);
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 2rem 2rem 2rem 2rem;
+}
+.flex-row-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.flex-col-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 250px;
+}
+.flex-col-div-space-around{
+    align-items: center;
+    justify-content: space-around;
+}
