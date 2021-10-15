@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div id="test">
+
+    </div>
+    <button onclick="alert('!')">
+        Mmmmm!
+    </button>    
+    <button onclick="f(10)">
+        Mmdlkfnblkdmmm!
+    </button>
+    <script>
+        
+        for(i=0; i<=100; i++){
+                document.write("Hi!");
+            } 
+            alert("Hi!");
+            console.log("Hi!")  
+            document.getElementById("test").innerText="Hello!";  
+            function f(a){
+                for(i = 0; i < a; i++){
+                    document.write("!");
+                }
+                
+            } 
+    </script>
+    <style>
+        .bigText{
+            font-size: 30px;
+            color: orange;
+        }
+    </style>
+</head>
+<body>  
+    <button onclick="G()">
+        YES!
+    </button>
+    <button onclick="antiG()">
+        NO!
+    </button>
+    <div id = btm1>
+        Are you ready?
+    </div>
+    <div>
+        <script>
+            document.write("Hi!");
+        </script>
+    </div> <h1>
+        <script>
+            document.write("Hi!");
+            /*document.getElementById("btm1").click=f;*/
+            document.getElementById("btm1").addEventListener("click", f);
+            
+            function G(){
+                /*document.getElementById("btm1").setAttribute("class", "bigText"); */ 
+                document.getElementById("btm1").classList.add("bigText");              
+            } 
+            function antiG(){
+                document.getElementById("btm1").classList.remove("bigText"); 
+            }
+        </script>   
+    </h1>    
+    <input type="button" id="hider" value="Нажмите, чтобы спрятать текст" />
+    <input type="button" id="antihider" value="Нажмите, чтобы показать текст" />
+
+    <input type="button" id="text" value="ekjrvbkejbvj" />
+
+    <script>
+    // Здесь не важно, как мы скрываем текст.
+    // Также можно использовать style.display:
+    document.getElementById('hider').onclick = function() {
+      document.getElementById('text').hidden = true;
+    }
+    document.getElementById('antihider').onclick = function() {
+      document.getElementById('text').hidden = false;
+    }
+  </script>   
+</body>
+</html>
